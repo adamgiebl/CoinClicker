@@ -12,8 +12,8 @@ let coins = 0
 function start() {
     console.log('start')
     createHearts(3)
-    generateCoins(3)
-    generateBombs(2)
+    generateCoins(8)
+    generateBombs(5)
     coinsContainer.innerText = coins
 }
 function createHearts(numberOfHearts) {
@@ -59,7 +59,7 @@ function generateCoins(numberOfcoins) {
             })
         }
         coin.randomize()
-        coin.addEventListener('click', coin.clicked)
+        coin.addEventListener('mousedown', coin.clicked)
         coin.addEventListener('animationend', coin.restart)
         container.appendChild(coin)
     }
@@ -102,7 +102,7 @@ function generateBombs(numberOfbombs) {
             })
         }
         bomb.randomize()
-        bomb.addEventListener('click', bomb.clicked)
+        bomb.addEventListener('mousedown', bomb.clicked)
         bomb.addEventListener('animationend', bomb.restart)
         container.appendChild(bomb)
     }

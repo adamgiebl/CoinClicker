@@ -78,8 +78,8 @@ html {
 }
 
 .coin_container .sprite {
-    width: 20vw;
-    height: 20vw;
+    width: 12vw;
+    height: 12vw;
 
     background-image: url(coin.svg);
     background-size: 100%;
@@ -92,8 +92,8 @@ html {
 }
 
 .bomb_container .sprite {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     background-image: url(bomb.svg);
     background-size: 100%;
 }
