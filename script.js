@@ -89,7 +89,7 @@ function generateBombs(numberOfbombs) {
             this.randomize()
         }
         bomb.clicked = function () {
-            hearts === 0 ? window.location.reload() : hearts--
+            hearts === 1 ? window.location.reload() : hearts--
             updateHearts()
             this.removeEventListener('click', this.clicked)
             this.classList.add('pause')
