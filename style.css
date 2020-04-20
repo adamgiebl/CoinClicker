@@ -1,6 +1,10 @@
 body {
     margin: 0;
     overflow: hidden;
+    background: black;
+}
+html {
+    background: black;
 }
 
 #screen {
