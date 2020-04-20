@@ -85,6 +85,19 @@ html {
     background-size: 100%;
 }
 
+.heart_container {
+    position: absolute;
+    top: 0vw;
+}
+
+.heart_container .sprite {
+    width: 12vw;
+    height: 11vw;
+
+    background-image: url(heart.svg);
+    background-size: 100%;
+}
+
 .bomb_container {
     position: absolute;
     
