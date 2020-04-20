@@ -7,7 +7,8 @@ const container = document.querySelector('#game_elements'),
 let allHearts = []
 let hearts = 3,
     coins = 0,
-    numberOfHearts = 3
+    numberOfHearts = 3,
+    speeds = ['speed1', 'speed2', 'speed3']
 const types = {
     HEART: 'heart',
     COIN: 'coin',
@@ -44,7 +45,7 @@ function generateElements(type, numberOfElements) {
         el.randomize = function () {
             this.addEventListener('click', this.clicked)
             this.style.left = Math.floor(Math.random() * 100) + 'vw'
-            this.classList.remove('speed1', 'speed2', 'speed3')
+            this.classList.remove(...[speeds])
             this.classList.add('speed' + (Math.floor(Math.random() * 3) + 1))
         }
         el.restart = function () {
